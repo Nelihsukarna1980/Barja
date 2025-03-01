@@ -286,10 +286,6 @@ INSTALL_FEATURE() {
 wget https://raw.githubusercontent.com/Nelihsukarna1980/Barja/main/menu/install_menu.sh && chmod +x install_menu.sh && ./install_menu.sh
 }
 
-INSTALL_UDP_CUSTOM() {
-wget https://raw.githubusercontent.com/Nelihsukarna1980/Barja/main/ws/UDP.sh && chmod +x UDP.sh && ./UDP.sh
-}
-
 if [[ $(cat /etc/os-release | grep -w ID | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/ID//g') == "ubuntu" ]]; then
 echo -e "\033[96;1mSETUP OS : $(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')\e[0m"
 UNTUK_UBUNTU
@@ -333,11 +329,6 @@ echo -e "${c}│           ${g}DOWNLOAD EXTRA MENU${NC}${c}            │${NC}"
 lane_bawah
 animation_loading 'INSTALL_FEATURE'
 
-lane_atas
-echo -e "${c}│           ${g}DOWNLOAD UDP CUSTOM${NC}${c}            │${NC}"
-lane_bawah
-animation_loading 'INSTALL_UDP_CUSTOM'
-
 }
 
 function UNTUK_UBUNTU(){
@@ -371,11 +362,6 @@ lane_atas
 echo -e "${c}│           ${g}DOWNLOAD EXTRA MENU${NC}${c}            │${NC}"
 lane_bawah
 animation_loading 'INSTALL_FEATURE'
-
-lane_atas
-echo -e "${c}│           ${g}DOWNLOAD UDP CUSTOM${NC}${c}            │${NC}"
-lane_bawah
-animation_loading 'INSTALL_UDP_CUSTOM'
 
 }
 
