@@ -120,7 +120,7 @@ cat > /var/www/html/index.html <<-END
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <kepala>
-<meta http-equiv="REFRESH" content="0;url=https://wa.me/6282131861788">
+<meta http-equiv="REFRESH" content="0;url=https://wa.me/6283835753089">
 </kepala>
 <tubuh>
 <p>Pengalihan URL</p>
