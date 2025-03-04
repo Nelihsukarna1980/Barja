@@ -517,14 +517,14 @@ TEXT="
 <b>Time    :</b> <code>$time</code>
 <b>Expired :</b> <code>$exp</code>
 <code>= = = = = = = = = = = = =</code>
-<b>      BARJA TUNNELING     </b>
+<b>      JABAR TUNNELING     </b>
 <code>= = = = = = = = = = = = =</code>"
 curl -s --max-time 10 -X POST "$URL" \
 -d "chat_id=$CHATID" \
 -d "text=$TEXT" \
 -d "parse_mode=HTML" \
 -d "disable_web_page_preview=true" \
--d "reply_markup={\"inline_keyboard\":[[{\"text\":\" ʙᴜʏ ꜱᴄʀɪᴘᴛ \",\"url\":\"https://t.me/ian_khvicha\"}]]}"
+-d "reply_markup={\"inline_keyboard\":[[{\"text\":\" ʙᴜʏ ꜱᴄʀɪᴘᴛ \",\"url\":\"https://t.me/jabar_putra\"}]]}"
 
 clear
 }
@@ -539,11 +539,11 @@ echo -e "${c}┌─────────────────────�
 echo -e "${c}│  ${g}INSTALL SCRIPT SELESAI..${NC}                  ${c}│${NC}"
 echo -e "${c}└────────────────────────────────────────────┘${NC}"
 echo  ""
-echo -e "\e[92;1m dalam 3 detik akan Melakukan reboot.... \e[0m"
+echo -e "\e[92;1m dalam 5 detik akan Melakukan reboot.... \e[0m"
 
 SENDER_NOTIFICATION
 
-sleep 3
+sleep 5
 
 clear
 # Langsung reboot
