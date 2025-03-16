@@ -13,13 +13,13 @@ apt install python3-requests -y
 # Cek apakah file ada
 if [ ! -f "$file_path" ]; then
     # Jika file tidak ada, buat file dan isi dengan dua baris
-    echo -e "jabar tunneling\n#00FFC1" | sudo tee "$file_path" > /dev/null
+    echo -e "jabar tunneling\n" | sudo tee "$file_path" > /dev/null
     echo "File '$file_path' berhasil dibuat."
 else
     # Jika file ada, cek apakah isinya kosong
     if [ ! -s "$file_path" ]; then
         # Jika file ada tetapi kosong, isi dengan dua baris
-        echo -e "jabar tunneling\n#00FFC1" | sudo tee "$file_path" > /dev/null
+        echo -e "jabar tunneling\n" | sudo tee "$file_path" > /dev/null
         echo "File '$file_path' kosong dan telah diisi."
     else
         # Jika file ada dan berisi data, tidak lakukan apapun
